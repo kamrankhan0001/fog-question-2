@@ -1,13 +1,24 @@
-body {
+ 
+ .rain-grid {
+  
+  display: grid;
+  grid-template-columns: repeat(20, 20px);
+  grid-template-rows: repeat(15, 25px); 
+  gap: 0px; 
+  justify-content: center;
+  margin-top: 50px;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+.rain-cell {
+  background-color: rgb(241, 177, 177);
+  width: 15px;
+  height: 20px;
+  border: 1px solid rgba(1, 0, 0, 0.1);
+  transition: background-color 0s ease-in-out;
+  
+  
+} 
+
+
